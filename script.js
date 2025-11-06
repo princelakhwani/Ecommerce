@@ -15,9 +15,6 @@ if (close) {
   });
 }
 
-// ====== NEW FEATURES ADDED BELOW ======
-
-// === ACTIVE LINK HIGHLIGHT ===
 const navLinks = document.querySelectorAll('#navbar a');
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
@@ -26,7 +23,6 @@ navLinks.forEach((link) => {
   });
 });
 
-// === HERO TEXT ANIMATION ===
 const hero = document.querySelector('#hero');
 if (hero) {
   const heroText = hero.querySelectorAll('h4, h2, h1, p, button');
@@ -41,7 +37,6 @@ if (hero) {
   });
 }
 
-// === SCROLL TO TOP BUTTON ===
 const scrollBtn = document.createElement('button');
 scrollBtn.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
 scrollBtn.classList.add('scroll-top-btn');
@@ -56,7 +51,6 @@ scrollBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// === DARK/LIGHT MODE TOGGLE ===
 const themeToggle = document.createElement('button');
 themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
 themeToggle.classList.add('theme-toggle');
@@ -71,7 +65,6 @@ themeToggle.addEventListener('click', () => {
     : '<i class="fa-solid fa-moon"></i>';
 });
 
-// === DYNAMIC CART COUNTER ===
 let cartCount = 0;
 const cartIcons = document.querySelectorAll('.fa-cart-shopping');
 const cartBadge = document.createElement('span');
@@ -91,7 +84,6 @@ cartIcons.forEach((icon) => {
   });
 });
 
-// === DYNAMIC STYLE INJECTION ===
 const style = document.createElement('style');
 style.textContent = `
 /* Scroll to top button */
